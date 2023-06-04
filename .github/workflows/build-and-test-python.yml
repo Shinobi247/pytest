@@ -20,12 +20,7 @@ jobs:
         run: |
           pip install -r requirements.txt
           pip install pytest
-      - name: Check py
-        run: |
-          python --version
-      - name: Check pytest
-        run: |
-          python -m pytest --version
       - name: Test with pytest
+        if: always()
         run: |
-          python -m pytest
+          pytest
