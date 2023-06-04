@@ -18,6 +18,9 @@ jobs:
           cache: 'pip'
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Check pytest
+        run: |
+          pytest --version
       - name: Test with pytest
         run: |
           pytest
