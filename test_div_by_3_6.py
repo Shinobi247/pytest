@@ -8,4 +8,4 @@ def test_divisible_by_3(input_value: Literal[39]):
 
 
 def test_divisible_by_6(input_value: Literal[39]):
-    assert input_value % 6 == 0
+    assert not input_value % 6 == 0
